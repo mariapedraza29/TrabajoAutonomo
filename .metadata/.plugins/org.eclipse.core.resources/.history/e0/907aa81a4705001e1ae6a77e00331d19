@@ -1,0 +1,102 @@
+package mascotas;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+import javax.swing.JOptionPane;
+
+
+public class Mascota {
+
+	HashMap<String, String>mapaMascotas;
+	ArrayList<String>listMas;
+	
+	private String documento;
+	private String nombre;
+	private String especie;
+	private int edad;
+
+	public Mascota() {
+		
+	}
+	public Mascota(String nombre, String especie, int edad) {
+		this.documento = documento;
+		this.nombre = nombre;
+		this.especie=especie;
+		this.edad=edad;
+		
+	}
+	
+	public HashMap<String, String> getMapaMascotas() {
+		return mapaMascotas;
+	}
+	public void setMapaMascotas(HashMap<String, String> mapaMascotas) {
+		this.mapaMascotas = mapaMascotas;
+	}
+	public ArrayList<String> getListMas() {
+		return listMas;
+	}
+	public void setListMas(ArrayList<String> listMas) {
+		this.listMas = listMas;
+	}
+	public String getDocumento() {
+		return documento;
+	}
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getEspecie() {
+		return especie;
+	}
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public void mostrarInformacion() {
+
+		System.out.println("Documento: "+ this.documento);
+		System.out.println("Nombre: "+ this.nombre);
+		System.out.println("Especie: "+ this.especie);
+		System.out.println("Edad: " + this.edad + "años");
+	}
+	public void hacerSonido() {
+		if(especie.equalsIgnoreCase("perro")) {
+			System.out.println("¡Guau guau!");
+		}else if(especie.equalsIgnoreCase("gato")) {
+			System.out.println("¡Miau miau");
+		}else {
+			System.out.println("La mascota no hace sonidos conocidos.");
+		}
+	}
+	public void dormir() {
+		System.out.println(nombre+" se durmio.");
+	}
+	public void comer() {
+		System.out.println(nombre + " está comiendo.");
+	}
+	public void ListMas() {
+		String nombre=JOptionPane.showInputDialog("Ingrese el nombre de la mascota");
+		if(listMas.contains(nombre)) {
+			for(String elemento: listMas) {
+				int pos=listMas.indexOf(elemento);
+				if(listMas.get(pos).equalsIgnoreCase(nombre)) {
+					System.out.println("La mascota "+nombre+ ", si existe");
+				}
+			}
+		}else {
+				System.out.println("Ese ciudad no existe en ningún país");
+		}
+	
+}
+}

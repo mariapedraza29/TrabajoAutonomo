@@ -1,0 +1,18 @@
+public class Main {
+	 public static void main(String[] args) {
+	        Mascota mascota = new Mascota("sew", "perro", 2020);
+	        mascota.setNombre("max");;
+	        mascota.getDocumento("123");
+
+	        Deportivo Deportivo = new ("Ferrari", "458 Italia", 2022, true);
+	        Deportivo.conducir();
+	        Deportivo.detener();
+	        Deportivo.acelerar();
+
+	        System.out.println(mascota.getDocumento());
+	        System.out.println(mascota.getNombre());
+	        System.out.println(mascota.getEdad());
+	        System.out.println(mascota.getEspecie());
+
+	 }
+}

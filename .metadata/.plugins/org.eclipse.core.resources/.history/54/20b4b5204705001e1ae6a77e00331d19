@@ -1,0 +1,15 @@
+public class Main {
+	 public static void main(String[] args) {
+	        Mascota mascota = new Mascota("sew", "perro", 2020);
+	        mascota.setNombre("max");
+	        mascota.setDocumento("123");
+
+	        Especie especie =  new Especie("perro");
+	        especie.setTipMascota("perro");
+
+	        System.out.println(mascota.getDocumento());
+	        System.out.println(mascota.getNombre());
+	        System.out.println(mascota.getEdad());
+
+	 }
+}

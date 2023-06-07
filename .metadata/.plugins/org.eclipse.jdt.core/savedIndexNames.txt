@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Lenovo\Documents\2560321-2\cristian\TrabajoAutonomo\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1424840065.index
+3454272571.index
+609440373.index
+1908704297.index
